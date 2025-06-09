@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro | Mercatodo</title>
+    <link rel="stylesheet" href="../css/register.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="register">
+        <form class="register__form" id="registerForm">
+            <h2 class="register__title">Regístrate</h2>
+
+            <div class="form__group">
+                <i class="fa-solid fa-user form__icon"></i>
+                <input type="text" name="nombre_completo" placeholder="Nombre completo" class="form__input"/>
+            </div>
+            <small class="form__error" id="error-nombre"></small>
+
+            <div class="form__group">
+                <i class="fa-solid fa-envelope form__icon"></i>
+                <input type="email" name="correo" placeholder="Correo electrónico" class="form__input" />
+            </div>
+            <small class="form__error" id="error-correo"></small>
+
+            <div class="form__group">
+                <i class="fa-solid fa-key form__icon"></i>
+                <input type="password" name="contrasena" placeholder="Contraseña" class="form__input" />
+            </div>
+            <small class="form__error" id="error-contrasena"></small>
+
+            <button type="submit" class="register__btn">Registrarse</button>
+
+            <p class="register__login-text">
+                ¿Ya tienes una cuenta?
+                <a href="login.html" class="register__login-link">Iniciar sesión</a>
+            </p>
+        </form>
+    </div>
+
+
+</body>
+<script src="../js/register.js"></script>
+
+</html>
