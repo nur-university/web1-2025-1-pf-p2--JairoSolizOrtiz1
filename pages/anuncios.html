@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercatodo | Anuncios</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/anuncios.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <h1 class="header__logo" onclick="window.location.href='../index.html'">Mercatodo</h1>
+            <button class="navbar__toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="navbar__menu" id="navbarMenu">
+                <a href="anuncios.html" class="navbar__link">Anuncios</a>
+                <a href="login.html" class="navbar__link">Iniciar Sesión</a>
+                <a href="register.html" class="navbar__link">Registrarse</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Para ti</h2>
+                <div class="grid grid--ads">
+                    <div class="ad-card" onclick="window.location.href='detalleProducto.html'">
+                        <img src="../img/anuncios/lenovo.jpg" class="ad-card__img" alt="Portátil" />
+                        <div class="ad-card__content">
+                            <h4 class="ad-card__title">Laptop Asus i7</h4>
+                            <p class="ad-card__price">700 €</p>
+                            <p class="ad-card__user">Luis</p>
+                        </div>
+                    </div>
+                    <div class="ad-card" onclick="window.location.href='detalleProducto.html'">
+                        <img src="../img/anuncios/sofaL.jpg" class="ad-card__img" alt="Sofá" />
+                        <div class="ad-card__content">
+                            <h4 class="ad-card__title">Sofá en L</h4>
+                            <p class="ad-card__price">380 €</p>
+                            <p class="ad-card__user">Diana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section__title">Lo más buscado</h2>
+                <div class="grid grid--categories">
+                    <div class="category-card">
+                        <img src="../img/categorias/electronica.jpeg" class="category-card__img" alt="Electrónica" />
+                        <p class="category-card__label">Electrónica</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../img/categorias/moda.jpg" class="category-card__img" alt="Moda" />
+                        <p class="category-card__label">Moda</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../img/categorias/vehiculos.png" class="category-card__img" alt="Vehículos" />
+                        <p class="category-card__label">Vehículos</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../img/categorias/hogar.jpeg" class="category-card__img" alt="Hogar" />
+                        <p class="category-card__label">Hogar</p>
+                    </div>
+                </div>
+
+                <h2 class="section__title">Anuncios recientes</h2>
+                <div class="grid grid--ads">
+                    <div class="ad-card" onclick="window.location.href='detalleProducto.html'">
+                        <img src="../img/anuncios/telefono.jpeg" class="ad-card__img" alt="Teléfono" />
+                        <div class="ad-card__content">
+                            <h4 class="ad-card__title">iPhone 12</h4>
+                            <p class="ad-card__price">500 €</p>
+                            <p class="ad-card__user">Rosa</p>
+                        </div>
+                    </div>
+                    <div class="ad-card" onclick="window.location.href='detalleProducto.html'">
+                        <img src="../img/anuncios/zaptitos.jpeg" class="ad-card__img" alt="Zapatos" />
+                        <div class="ad-card__content">
+                            <h4 class="ad-card__title">Zapatos nuevos</h4>
+                            <p class="ad-card__price">35 €</p>
+                            <p class="ad-card__user">Diego</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section__title">Explora otras categorías</h2>
+                <div class="grid grid--categories">
+                    <div class="category-card">
+                        <img src="../img/categorias/deporte.jpg" class="category-card__img" alt="Deporte" />
+                        <p class="category-card__label">Deporte</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../img/categorias/libros.jpg" class="category-card__img" alt="Libros" />
+                        <p class="category-card__label">Libros</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../img/categorias/juguetes.jpg" class="category-card__img" alt="Juguetes" />
+                        <p class="category-card__label">Juguetes</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../img/categorias/musica.jpg" class="category-card__img" alt="Música" />
+                        <p class="category-card__label">Música</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__text">© 2025 Mercatodo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('navbarMenu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('navbar__menu--active');
+        });
+    </script>
+</body>
+
+</html>
