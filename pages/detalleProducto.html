@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portátil Lenovo | Mercatodo</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/detalleProducto.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar__container">
+            <a class="navbar__logo" href="../index.html">Mercatodo</a>
+            <button class="navbar__toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="navbar__menu" id="navbarMenu">
+                <select class="navbar__select">
+                    <option>Categorías</option>
+                    <option>Electrónica</option>
+                    <option>Hogar</option>
+                    <option>Moda</option>
+                </select>
+                <a href="formAnuncio.html" class="navbar__link">Crear anuncio</a>
+                <a href="misAnuncios.html" class="navbar__link">Mis anuncios</a>
+                <a href="guardados.html" class="navbar__link">Guardados</a>
+                <a href="chats.html" class="navbar__link">Mensajes</a>
+                <div class="navbar__user" id="userMenuToggle">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="user-dropdown" id="userDropdown">
+                        <a href="#" id="logoutBtn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product">
+        <div class="container product__container">
+            <a href="../index.html" class="product__breadcrumb">← Todos los productos</a>
+            <h1 class="product__title"></h1>
+
+            <div class="product__image-wrapper">
+                <img src="../img/anuncios/lenovo.jpg" alt="Portátil Lenovo" class="product__image" />
+                <button class="product__fav"><i class="fa-regular fa-heart"></i></button>
+            </div>
+
+            <div class="product__info">
+                <div class="product__price">€600</div>
+                <div class="product__user">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span>Juan Pérez</span>
+                </div>
+                <button class="product__message">Enviar mensaje</button>
+                <div class="product__meta">
+                    <span>Publicado: 20/05/2025</span>
+                    <span class="estado estado--activo">Estado: Activo</span>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="product__description">
+                <h2>Descripción</h2>
+                <p>
+                    Se vende portátil Lenovo en excelente estado. Cuenta con una pantalla de 15,6 pulgadas, procesador
+                    Intel Core i5,
+                    8 GB de RAM y 256 GB de almacenamiento SSD. Ideal para trabajo o entretenimiento.
+                </p>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+<script src="../js/detalleProducto.js"></script>
+<script src="../js/logout.js"></script>
+<script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('navbarMenu');
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('navbar__menu--active');
+    });
+
+</script>
+
+
+
+
+</html>
